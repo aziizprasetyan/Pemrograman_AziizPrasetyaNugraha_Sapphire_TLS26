@@ -13,7 +13,7 @@ logika penyelesaian dari Problem 1 dan Problem 2 dalam bentuk PDF (Fase1_AziizPr
 
 # Daftar File
 
-- Fase1-Aziiz Prasetya Nugraha-Sapphire.pdf
+- Fase1_AziizPrasetyaNugraha_Sapphire.pdf
 - Problem01TLS26.cpp
 - Problem02TLS26.cpp
 - README.md
