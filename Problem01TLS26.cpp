@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void hapusAstronaut(int astronaut[], int &jumlah, int posisi) {
+void eliminasiAstronaut(int astronaut[], int &jumlah, int posisi) {
     for (int i = posisi; i < jumlah - 1; i++) {
         astronaut[i] = astronaut[i + 1];
     }
@@ -27,19 +27,19 @@ int main() {
     int jumlah = N;
     int posisi = 0;
 
-    cout << "\nUrutan eliminasi:\n";
+    cout << "Urutan eliminasi: ";
 
     while (jumlah > 1) {
 
         posisi = (posisi + K - 1) % jumlah;
 
-        int yangDihapus = astronaut[posisi];
+        int yangDieliminasi = astronaut[posisi];
 
-        cout << yangDihapus << " ";
+        cout << yangDieliminasi << " ";
 
-        hapusAstronaut(astronaut, jumlah, posisi);
+        eliminasiAstronaut(astronaut, jumlah, posisi);
 
-        if (yangDihapus % 2 == 0) {
+        if (yangDieliminasi % 2 == 0) {
             K += 2;
         } 
         else {
@@ -51,7 +51,7 @@ int main() {
         }
     }
 
-    cout << "\n\nAstronaut terakhir yang bertahan: "
+    cout << "Astronaut terakhir yang bertahan: "
          << astronaut[0] << endl;
 
     return 0;
